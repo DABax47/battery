@@ -1,0 +1,76 @@
+// Variables
+
+$light:white;
+$dark:#222;
+$batteryUnit:green;
+$abs:absolute;
+$rel:relative;
+$right:0;
+$height:273px;
+$width:300px;
+// mixins
+@mixin dimensions{
+  max-width: $width;
+  max-height: $height;
+  min-width: $width;
+  min-height: $height;
+}
+@mixin pos{
+  top: 0;
+  right: $right;
+  bottom: 0;
+  left: 0;
+}
+//  endMixins
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $dark;
+  height: 100vh;
+
+}
+
+.battery {
+  -webkit-mask-image: url("../asset/1.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-origin: fill-box;
+margin: auto;
+  position: $abs;
+@include pos;
+@include dimensions;
+  &-unit {
+    position: $rel;
+    background-color: $batteryUnit;
+    height: $height;
+    max-width: $width;
+    max-height: $height;
+    width: 32%;
+  }
+}
+.battery-options {
+  color: $light;
+  position: $abs;
+  right: $right;
+  height: 12%;
+  width: 20%;
+  display: inline-block;
+  label{
+    color:$light;
+  }
+}
+
+// FUNCTION HELPERS
+.light-mode {
+  background-color: $light;
+  color:$dark
+}
+.dark-mode {
+  background-color: $dark;
+  color: $light
+}
+.hide {
+  opacity: 0;
+}

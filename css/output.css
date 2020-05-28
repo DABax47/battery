@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  height: 100vh;
+}
+
+.battery {
+  -webkit-mask-image: url("../asset/1.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-origin: fill-box;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 300px;
+  max-height: 273px;
+  min-width: 300px;
+  min-height: 273px;
+}
+.battery-unit {
+  position: relative;
+  background-color: green;
+  height: 273px;
+  max-width: 300px;
+  max-height: 273px;
+  width: 32%;
+}
+
+.battery-options {
+  color: white;
+  position: absolute;
+  right: 0;
+  height: 12%;
+  width: 20%;
+  display: inline-block;
+}
+.battery-options label {
+  color: white;
+}
+
+.light-mode {
+  background-color: white;
+  color: #222;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: white;
+}
+
+.hide {
+  opacity: 0;
+}
+
+/*# sourceMappingURL=output.css.map */

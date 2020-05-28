@@ -1,0 +1,18 @@
+{
+  "name": "pomodorobattery",
+  "version": "1.0.0",
+  "description": "my take on the Pomodoro Technique where the clock/ time tracker is represented as a battery that will slowly loose power. Users can select from a test time(a few seconds), 5 mins, 10mins, 15 mins. On timer End a message and alarm will sound to remind you to breathe and go take a break('Go recharge your battery).ENJOY!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pomodoro",
+    "focus",
+    "clock",
+    "timer",
+    "productivity"
+  ],
+  "author": "Dwayne Bynum",
+  "license": "MIT"
+}
