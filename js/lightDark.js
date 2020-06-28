@@ -11,14 +11,14 @@
 			$mode
 				.removeClass("light-mode")
 				.addClass("dark-mode")
-				.text("Dark");
+				.text("DARK");
 		} else {
 			body.css("background-color","#222");
 			$label.css('color','white');
 			$mode
 				.removeClass("dark-mode")
 				.addClass("light-mode")
-				.text("Light");
+				.text("LIGHT");
 		}
 	});
 }
